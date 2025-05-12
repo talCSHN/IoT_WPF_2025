@@ -252,7 +252,7 @@ WPF Study
 7. Models > Genre(DivisionTbl) 모델 작업
 8. BookGenreViewModel DB처리
 
-
+    https://github.com/user-attachments/assets/85c36757-55f1-42b2-8e41-ea97f3f61947
 
 ## 4일차
 
