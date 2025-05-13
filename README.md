@@ -267,14 +267,24 @@ WPF Study
 5. View에 Dialog 관련 네임스페이스, 속성 추가
 6. await this.dialogCoordinator.ShowMessageAsync() 사용
 
+    <img src="./Image/wpf0011.png" width="600">
+
+7. BookView.xaml 화면 작업
+8. MemberView.xaml, RentalView.xaml 화면 작업
+9. ViewModel들 작업
+
+    <img src="./Image/wpf0012.png" width="600">
+
 #### DB연결 CRUD 연습 시 추가 필요 사항
 - [O] 여러 번 나오는 로직 메서드화
 - [O] NLog로 각 기능 동작 시 로그 남기기. 공통화 작업
 - [O] 연결문자열 Common으로 이전
 - [O] 종료 메뉴 다이얼로그 MetroUI로 변경
+- [O] MahApps.Metro 메시지 형태로 변경
 - [O] 삭제여부 메시지박스 추가
-- [ ] DB 쿼리 모델로 이전
-- [ ] MahApps.Metro 메시지 형태로 변경
+
+### DB연결 CRUD 실습
+- BooksView, BooksViewModel 작업 실습
 
 ## 5일차
 

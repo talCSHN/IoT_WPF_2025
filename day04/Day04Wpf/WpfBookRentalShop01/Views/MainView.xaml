@@ -48,12 +48,12 @@
                             <iconPacks:PackIconPhosphorIcons Kind="BooksFill" />
                         </MenuItem.Icon>
                     </MenuItem>
-                    <MenuItem Header="회원관리">
+                    <MenuItem Header="회원관리" Command="{Binding ShowMembersCommand}"> 
                         <MenuItem.Icon>
                             <iconPacks:PackIconPhosphorIcons Kind="UserListFill" />
                         </MenuItem.Icon>
                     </MenuItem>
-                    <MenuItem Header="대여관리">
+                    <MenuItem Header="대여관리" Command="{Binding ShowRentalsCommand}">
                         <MenuItem.Icon>
                             <iconPacks:PackIconFontAwesome Kind="TruckRampBoxSolid" />
                         </MenuItem.Icon>

@@ -1,5 +1,5 @@
 ﻿<UserControl 
-    x:Class="WpfBookRentalShop01.Views.BooksView"
+    x:Class="WpfBookRentalShop01.Views.MembersView"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -22,20 +22,18 @@
 
         <TextBlock Grid.Row="0" Grid.Column="0" FontSize="25"
                Margin="10,0,0,0"
-               Text="책 관리" />
+               Text="회원 관리" />
         <DataGrid Grid.Row="1" Grid.Column="0" Margin="5"
               AutoGenerateColumns="False" IsReadOnly="True"
-              ItemsSource="{Binding Books}"
-              SelectedItem="{Binding SelectedBook, Mode=TwoWay}">
+              ItemsSource="{Binding Members}"
+              SelectedItem="{Binding SelectedMember, Mode=TwoWay}">
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding Idx}" Header="순번" />
-                <DataGridTextColumn Binding="{Binding Division}" Header="장르" Visibility="Hidden"/>
-                <DataGridTextColumn Binding="{Binding DNames}" Header="장르명" />
-                <DataGridTextColumn Binding="{Binding Names}" Header="책 제목" />
-                <DataGridTextColumn Binding="{Binding Author}" Header="책 저자" />
-                <DataGridTextColumn Binding="{Binding ReleaseDate, StringFormat='yyyy-MM-dd'}" Header="출판일" />
-                <DataGridTextColumn Binding="{Binding ISBN}" Header="ISBN" Visibility="Hidden" />
-                <DataGridTextColumn Binding="{Binding Price, StringFormat={}{0:N0}원}" Header="책가격" />
+                <DataGridTextColumn Binding="{Binding Levels}" Header="회원 등급" />
+                <DataGridTextColumn Binding="{Binding Names}" Header="회원명" />
+                <DataGridTextColumn Binding="{Binding Addr}" Header="주소" />
+                <DataGridTextColumn Binding="{Binding Mobile}" Header="핸드폰" />
+                <DataGridTextColumn Binding="{Binding Email}" Header="메일주소" />
             </DataGrid.Columns>
         </DataGrid>
         <GroupBox Grid.Row="1" Grid.Column="1" Margin="5" Header="상세">
@@ -57,39 +55,35 @@
                     mah:TextBoxHelper.AutoWatermark="True"
                     mah:TextBoxHelper.Watermark="순번"
                     mah:TextBoxHelper.WatermarkAlignment="Left"
-                    Value="{Binding SelectedBook.Idx}"/>
+                    Value="{Binding SelectedMember.Idx}"/>
                 <ComboBox 
                     Grid.Row="1" Margin="3"
-                    SelectedValuePath="Key"
-                    DisplayMemberPath="Value"
-                    mah:TextBoxHelper.Watermark="장르" 
-                    ItemsSource="{Binding Divisions}"
-                    SelectedValue="{Binding SelectedBook.Division}" />
-
-
+                    mah:TextBoxHelper.Watermark="회원 등급"
+                    Text="{Binding SelectedMember.Levels}">
+                    <ComboBoxItem Content="A" />
+                    <ComboBoxItem Content="B" />
+                    <ComboBoxItem Content="C" />
+                    <ComboBoxItem Content="D" />
+                </ComboBox>
                 <TextBox Grid.Row="2" Margin="3"
                      mah:TextBoxHelper.AutoWatermark="True"
-                     mah:TextBoxHelper.Watermark="책 제목" 
-                     Text="{Binding SelectedBook.Names}"/>
+                     mah:TextBoxHelper.Watermark="회원명" 
+                     Text="{Binding SelectedMember.Names}"/>
                 <TextBox Grid.Row="3" Margin="3"
                      mah:TextBoxHelper.AutoWatermark="True"
-                     mah:TextBoxHelper.Watermark="책 저자" 
-                     Text="{Binding SelectedBook.Author}"/>
+                     mah:TextBoxHelper.Watermark="주소" 
+                     Text="{Binding SelectedMember.Addr}"/>
                 <TextBox 
                     Grid.Row="4" Margin="3"
                     mah:TextBoxHelper.AutoWatermark="True"
-                    mah:TextBoxHelper.Watermark="ISBN" 
-                    Text="{Binding SelectedBook.ISBN}"/>
+                    mah:TextBoxHelper.Watermark="핸드폰" 
+                    Text="{Binding SelectedMember.Mobile}"/>
                 <TextBox 
-                    Grid.Row="6" Margin="3"
-                    mah:TextBoxHelper.AutoWatermark="True"
-                    mah:TextBoxHelper.Watermark="책 가격" 
-                    Text="{Binding SelectedBook.Price}"/>
-                <DatePicker
                     Grid.Row="5" Margin="3"
                     mah:TextBoxHelper.AutoWatermark="True"
-                    mah:TextBoxHelper.Watermark="출판일" 
-                    Text="{Binding SelectedBook.ReleaseDate}"/>
+                    mah:TextBoxHelper.Watermark="메일주소" 
+                    Text="{Binding SelectedMember.Email}"/>
+                
 
                 <StackPanel Orientation="Horizontal" Grid.Row="7" HorizontalAlignment="Right">
                     <Button Content="초기화" Margin="5,5,5,5" Width="70" 

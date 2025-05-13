@@ -80,7 +80,7 @@ namespace WpfBookRentalShop01.ViewModels
         [RelayCommand]
         public void ShowBooks()
         {
-            var vm = new BooksViewModel();
+            var vm = new BooksViewModel(Common.DIALOGCODINATOR);
             var v = new BooksView
             {
                 DataContext = vm
@@ -89,6 +89,34 @@ namespace WpfBookRentalShop01.ViewModels
             CurrentStatus = "책 관리 화면";
 
             Common.LOGGER.Info("책 관리 실행");
+        }
+
+        [RelayCommand]
+        public void ShowMembers()
+        {
+            var vm = new MembersViewModel(Common.DIALOGCODINATOR);
+            var v = new MembersView
+            {
+                DataContext = vm
+            };
+            CurrentView = v;
+            CurrentStatus = "회원 관리 화면";
+
+            Common.LOGGER.Info("회원 관리 실행");
+        }
+
+        [RelayCommand]
+        public void ShowRentals()
+        {
+            var vm = new RentalsViewModel();
+            var v = new RentalsView
+            {
+                DataContext = vm
+            };
+            CurrentView = v;
+            CurrentStatus = "대여 관리 화면";
+
+            Common.LOGGER.Info("대여 관리 실행");
         }
         #endregion
 
