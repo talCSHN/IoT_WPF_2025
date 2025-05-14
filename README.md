@@ -322,7 +322,7 @@ WPF Study
 4. MVVM 구조 초기작업
 5. UI 구현
 
-    <img src="./image/wpf0015.png" width="650">
+    <img src="./Image/wpf0015.png" width="650">
 
 6. 로직구현
     1. TMDB API 사용 구현
