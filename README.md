@@ -333,5 +333,8 @@ WPF Study
 9. 텍스트박스 한글 입력 우선 처리
 10. 실행시 텍스트박스에 포커스 가도록 처리
 
+    https://github.com/user-attachments/assets/9afd19ee-2d43-4b72-b12b-6c2406c7127f
+
+
 
 ## 6일차
