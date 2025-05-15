@@ -357,3 +357,6 @@ WPF Study
 
 6. 기타 작업 완료
 7. 결과 화면
+
+    https://github.com/user-attachments/assets/895dd8c0-e57e-42eb-a64b-8e1577a03033
+
