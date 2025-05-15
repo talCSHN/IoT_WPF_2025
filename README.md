@@ -335,6 +335,25 @@ WPF Study
 
     https://github.com/user-attachments/assets/9afd19ee-2d43-4b72-b12b-6c2406c7127f
 
-
-
 ## 6일차
+
+### 2025-MOVIE FINDER
+1. 상태표시줄 시계 동작
+2. 상태표시줄 검색 결과 건수 표시
+3. 로그 출력 정리
+4. 즐겨찾기 DB연동
+    1. MySQL Workbench에서 moviefinder 데이터베이스(스키마 생성)
+    2. movieitems 테이블 생성. 컬럼은 MovieItem.cs 속성과 동일
+    3. INSERT, UPDATE, DELETE 작업
+
+    <img src="./Image/wpf0016.png" width="650">
+
+5. YouTube 예고편 보기
+    1. TrailerView, TrailerViewModel 생성
+    2. WPF 기본 WebBrowser는 HTML5 기술이 표현 안 됨. 오류 많음
+    3. NuGet 패키지 - CefSharp WebBrowser 패키지 설치
+    4. **CefSharp.Wpf.NET Core 설치 시 프로젝트 속성 > 일반 > 빌드 > 플랫폼 대상 > Any CPU에서 x64로 변경**
+    5. NuGet 패키지 - Google.Apis.YouTube.v3 설치
+
+6. 기타 작업 완료
+7. 결과 화면
