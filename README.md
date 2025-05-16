@@ -360,3 +360,14 @@ WPF Study
 
     https://github.com/user-attachments/assets/895dd8c0-e57e-42eb-a64b-8e1577a03033
 
+## 7일차
+### 부산광역시 부산맛집 정보앱
+1. [데이터포털](https://www.data.go.kr/) Open API
+2. WPF 프로젝트 생성
+3. NuGet 패키지 라이브러리 설치
+    - CommunityToolkit.Mvvm
+    - MahApps.Metro / MahApps.Metro.IconPacks
+    - Newtonsoft.JSON
+    - CefSharp.Wpf.NETCore (플랫폼 X64)
+    - NLog
+4. MVVM 초기화
