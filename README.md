@@ -383,3 +383,56 @@ WPF Study
 
     https://github.com/user-attachments/assets/47a2b9c6-2e17-47be-bd1c-a5a8652f78f1
 
+### 스마트홈 연동 모니터링앱
+- 전면부
+<img src="./Image/wpf0022.jpg" width="650">
+- 후면부
+<img src="./Image/wpf0023.jpg" width="650">
+
+- [개발링크](https://github.com/hugoMGSung/hungout-with-arduino/tree/main/SmartHomeDIY)
+
+1. Arduino + Raspberry Pi 스마트홈 기제작
+
+#### MQTT
+
+<img src="./Image/wpf0026.png" width="600">
+
+- Message Queueing Telemetry Transport : 기계간 통신용 경량 메시징 프로토콜
+- Publish / Subscribe
+    - Publish(발행) : 메시지를 만들어서 전달
+    - Subscribe(구독) : 필요한 메시지를 수신받아서 사용
+- Server(MQTT 브로커)/Client 프로그램으로 동작
+- 데이터는 휘발성 : 받는 사람이 없으면 데이터 사라짐. DB에 저장하는 구성을 해줘야 함
+
+- MQTT를 대체할 수 있는 유사한 기능을 하는 기술
+    - `Redis`, `Apache Kafka`, RabbitMQ, ZeroMQ, Socket 통신 직접 개발
+
+#### MQTT 시뮬레이션 프로젝트
+1. MQTT 브로커 설치
+    - https://mosquitto.org/download/
+    - mosquitto-2.0.21a-install-windows-x64.exe 설치
+    - 설치 후 서비스에서 실행 중지
+2. Mosquitto 설정파일 수정
+    - mosquitto.conf 문서에디터 관리자 모드로 오픈
+    - 235번째 줄 #listner -> listener 1883 으로 변경
+    - 534번째 줄 #allow_anonymous false -> #allow_anonymous true 로 변경
+3. 파일 저장 후 서비스 재시작
+4. Windows 보안
+    - 방화벽 및 네트워크 보호 > 고급 설정
+    - 인바운드 규칙 > 새 규칙
+    - 포트 선택 > 다음
+    - TCP 선택, 특정포트 1883 입력
+5. MQTT Explorer 설치
+    - new Connection 생성, Host 127.0.0.1, Port 1883 저장
+    - CONNECT
+6. VSCode에서 MqttPub.py 파일 생성 [MqttPub.py](./day08/Pythons/MqttPub.py)
+
+### 스마트홈 프로젝트 시작
+1. 화면 UI 변경
+2. NuGet 패키지
+    - CommunityToolkit.Mvvm 설치
+3. Models, Views, ViewModels 폴더 생성
+4. MainWindow 바인딩 처리
+5. MainViewModel에서 바인딩 속성 초기화
+
+    <img src="./Image/wpf0025.png" width="650">

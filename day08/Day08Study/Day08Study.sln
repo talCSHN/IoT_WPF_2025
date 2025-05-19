@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35931.197 d17.13
+VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusanRestaurantApp", "BusanRestaurantApp\BusanRestaurantApp.csproj", "{3D535842-67DD-4C8C-B316-61770244E434}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfSmartHomeApp", "WpfSmartHomeApp\WpfSmartHomeApp.csproj", "{8B7880E1-BF33-51DA-CD02-A78A863232FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,14 @@ Global
 		{3D535842-67DD-4C8C-B316-61770244E434}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3D535842-67DD-4C8C-B316-61770244E434}.Release|x64.ActiveCfg = Release|x64
 		{3D535842-67DD-4C8C-B316-61770244E434}.Release|x64.Build.0 = Release|x64
+		{8B7880E1-BF33-51DA-CD02-A78A863232FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B7880E1-BF33-51DA-CD02-A78A863232FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B7880E1-BF33-51DA-CD02-A78A863232FC}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8B7880E1-BF33-51DA-CD02-A78A863232FC}.Debug|x64.Build.0 = Debug|Any CPU
+		{8B7880E1-BF33-51DA-CD02-A78A863232FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B7880E1-BF33-51DA-CD02-A78A863232FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B7880E1-BF33-51DA-CD02-A78A863232FC}.Release|x64.ActiveCfg = Release|Any CPU
+		{8B7880E1-BF33-51DA-CD02-A78A863232FC}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
