@@ -437,6 +437,10 @@ WPF Study
 
     <img src="./Image/wpf0025.png" width="650">
 
+
+   https://github.com/user-attachments/assets/2ee98652-2b88-40eb-b95f-4344ed16d7f9
+
+
 ## 9일차
 
 ### 스마트홈 연동 모니터링앱
