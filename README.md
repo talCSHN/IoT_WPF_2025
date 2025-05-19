@@ -436,3 +436,9 @@ WPF Study
 5. MainViewModel에서 바인딩 속성 초기화
 
     <img src="./Image/wpf0025.png" width="650">
+
+## 9일차
+
+### 스마트홈 연동 모니터링앱
+
+#### MQTT 시뮬레이션
