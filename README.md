@@ -371,3 +371,11 @@ WPF Study
     - CefSharp.Wpf.NETCore (플랫폼 X64)
     - NLog
 4. MVVM 초기화
+5. UI 디자인 및 구현
+
+## 8일차
+
+### 부산광역시 부산맛집 정보앱
+1. 메인창 내용 구글맵 창으로 이동
+2. cefSharp.Wpf로 구글맵 지도 표현
+3. 위도(Latitude), 경도(Longitude) 표현
