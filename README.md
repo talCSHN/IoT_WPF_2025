@@ -474,3 +474,7 @@ WPF Study
 
 5. WPF MVVM 전체구현
 6. MqttPub.py와 Publish된 IoT데이터 WPF에서 Subscribe 예제
+
+https://github.com/user-attachments/assets/ac36dd5b-48d9-4910-9d76-4fd10d751727
+
+
