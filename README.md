@@ -477,4 +477,10 @@ WPF Study
 
 https://github.com/user-attachments/assets/ac36dd5b-48d9-4910-9d76-4fd10d751727
 
+## 10일차
 
+### 스마트홈 연동 모니터링앱
+
+#### 스마트홈 기기 실제 IoT센서 데이터 모니터링 앱
+
+#### 스마트홈 WPF 실시간 시각화
