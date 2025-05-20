@@ -445,4 +445,28 @@ WPF Study
 
 ### 스마트홈 연동 모니터링앱
 
+#### 네트워크 확인
+- telnet 명령어로 서버 서비스가 동작중인지 확인
+
+```shell
+> telnet 아이피주소 포트번호
+# MySQL 접속 가능 여부
+> telnet 127.0.0.1 3306
+# MQTT 접속 가능 여부
+> telnet 127.0.0.1 1883
+```
+
 #### MQTT 시뮬레이션
+1. MqttPub.py 소스코드에 Fake IoT 센서값 전달 코드 작성
+2. Fake 센싱값을 json으로 Publish
+3. C# MahApps.Metro 사용 MQTT 데이터 Subscriber 앱
+    - CommunityToolkit.Mvvm
+    - MahApps.Metro
+    - MahApps.Metro.IconPacks
+    - Newtonsoft.Json
+    - MQTTnet
+    - MySql.Data
+
+4. DB 서버에 접속자 정보 확인 쿼리
+5. WPF MVVM 전체구형
+6. Mqtt.py
