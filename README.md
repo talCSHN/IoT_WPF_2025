@@ -505,8 +505,7 @@ https://github.com/user-attachments/assets/ac36dd5b-48d9-4910-9d76-4fd10d751727
 
     스마트홈 조작영상
 
-    https://github.com/user-attachments/assets/cd0c2b52-4132-49e5-b906-512dd72dd5eb
-
+    https://github.com/user-attachments/assets/3b611fd1-1e36-4588-8118-d39713f253c3
 
     스마트홈 모니터링앱 동작 영상
     
