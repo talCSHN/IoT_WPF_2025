@@ -492,4 +492,21 @@ https://github.com/user-attachments/assets/ac36dd5b-48d9-4910-9d76-4fd10d751727
     - RL : Real Light 실제 전등 켜짐 여부
     - CB : ChaimBell 벨 푸쉬 여부
 
+- 실행화면 생략(9일차 화면과 동일)
+
 #### 스마트홈 WPF 실시간 시각화
+- NuGet 패키지
+    - MQTTnet
+    - Newtonsoft.Json
+    - NLog
+- WpfMqttSubApp.Models의 SensingInfo.cs 가져오기
+- MQTT 센서 데이터로 동작 변수 값 할당
+- 실행 화면
+
+    스마트홈 조작영상
+    
+    <>
+
+    스마트홈 모니터링앱 동작 영상
+    
+    <>
