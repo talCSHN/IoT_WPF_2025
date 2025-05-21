@@ -482,5 +482,14 @@ https://github.com/user-attachments/assets/ac36dd5b-48d9-4910-9d76-4fd10d751727
 ### 스마트홈 연동 모니터링앱
 
 #### 스마트홈 기기 실제 IoT센서 데이터 모니터링 앱
+- SmartHome MQTT JSON Key값
+    - L : Light 전등
+    - R : Rain(Water Drop Sensor)
+    - T : Temperature 온도
+    - H : Humidity 습도
+    - F : Fan 선풍기/에어컨
+    - V : Human Detection 침입 감지
+    - RL : Real Light 실제 전등 켜짐 여부
+    - CB : ChaimBell 벨 푸쉬 여부
 
 #### 스마트홈 WPF 실시간 시각화

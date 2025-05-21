@@ -1,0 +1,167 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style x:Key="MenuButton"
+           TargetType="Button">
+        <Setter Property="Background"
+                Value="Transparent" />
+        <Setter Property="Margin"
+                Value="15 0 15 20" />
+        <Setter Property="Height"
+                Value="50" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}"
+                            CornerRadius="10"
+                            BorderBrush="Transparent"
+                            BorderThickness="1">
+                        <Grid>
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center" />
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver"
+                     Value="True">
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Border Background="{TemplateBinding Background}"
+                                    CornerRadius="10"
+                                    BorderBrush="#FFFFFF"
+                                    BorderThickness="1">
+                                <Grid>
+                                    <ContentPresenter HorizontalAlignment="Center"
+                                                      VerticalAlignment="Center" />
+                                </Grid>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="BorderPage"
+           TargetType="Border">
+        <Setter Property="Background"
+                Value="Black" />
+        <Setter Property="CornerRadius"
+                Value="25" />
+        <Setter Property="Grid.Column"
+                Value="1" />
+        <Setter Property="Margin"
+                Value="30,0,0,0" />
+        <Setter Property="Effect">
+            <Setter.Value>
+                <DropShadowEffect ShadowDepth="1"
+                                  BlurRadius="20"
+                                  Opacity="0.5" />
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="toggleButton"
+           TargetType="ToggleButton">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ToggleButton">
+                    <Grid>
+                        <Border x:Name="Border"
+                                Background="#3256F1"
+                                CornerRadius="13"
+                                Width="50"
+                                Height="26"
+                                VerticalAlignment="Center"
+                                HorizontalAlignment="Center" />
+                        <Ellipse x:Name="Ellipse"
+                                 Fill="#FBFBFB"
+                                 Width="24"
+                                 Height="24"
+                                 VerticalAlignment="Center"
+                                 HorizontalAlignment="Left"
+                                 Margin="25,0,0,0" />
+                    </Grid>
+
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsChecked"
+                                 Value="True">
+                            <Trigger.EnterActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <ColorAnimation Storyboard.TargetName="Border"
+                                                        Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)"
+                                                        To="#001C91"
+                                                        Duration="0:0:0:0.2" />
+
+                                        <ThicknessAnimation Storyboard.TargetName="Ellipse"
+                                                            Storyboard.TargetProperty="Margin"
+                                                            To="1,0,0,0"
+                                                            Duration="0:0:0:0.2" />
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.EnterActions>
+                            <Trigger.ExitActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <ColorAnimation Storyboard.TargetName="Border"
+                                                        Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)"
+                                                        To="#3256F1"
+                                                        Duration="0:0:0:0.2" />
+
+                                        <ThicknessAnimation Storyboard.TargetName="Ellipse"
+                                                            Storyboard.TargetProperty="Margin"
+                                                            To="25,0,0,0"
+                                                            Duration="0:0:0:0.2" />
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.ExitActions>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="addButton"
+           TargetType="Button">
+        <Setter Property="Background"
+                Value="White" />
+        <Setter Property="Foreground"
+                Value="#00192E" />
+        <Setter Property="Padding"
+                Value="0,3" />
+        <Setter Property="Margin"
+                Value="0,0,0,5" />
+        <Setter Property="Height"
+                Value="90" />
+        <Setter Property="FontSize"
+                Value="16" />
+        <Setter Property="FontWeight"
+                Value="Bold" />
+        <Setter Property="FocusVisualStyle"
+                Value="{x:Null}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}"
+                            CornerRadius="45">
+                        <ContentPresenter HorizontalAlignment="Center"
+                                          VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver"
+                     Value="True">
+                <Setter Property="Background"
+                        Value="#E0E0E0" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+</ResourceDictionary>
